@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="uk">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="robots" content="index, follow" />
+		<title>Оренда і прокат всього ⬤ Do U Rent?</title>
+		<meta
+			name="description"
+			content="Сервіс оголошень оренди і прокату від власників ⬤ Нерухомість, транспорт, товари - без посередників! ⬤ Будь-що на прокат по всій Україні"
+		/>
+		<link rel="canonical" href="https://ця сторінка" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+		<link rel="shortcut icon" href="favicon.ico" />
+		<link rel="manifest" href="/site.webmanifest" />
+		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+		<meta name="msapplication-TileColor" content="#da532c" />
+		<meta name="theme-color" content="#ffffff" />
+		<meta name="copyright" content="dourent.com" />
+		<!-- social networks -->
+		<meta property="og:locale" content="uk_UA" />
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="Оренда і прокат всього ⬤ Do U Rent?" />
+		<meta
+			property="og:description"
+			content="Сервіс оголошень оренди і прокату від власників ⬤ Нерухомість, транспорт, товари - без посередників! ⬤ Будь-що на прокат по всій Україні"
+		/>
+		<meta property="og:image" content="/img/logo.jpg" />
+		<meta property="og:url" content="https://dourent.com/" />
+		<meta property="og:site_name" content="DoURent" />
+		<!-- fonts -->
+		<link rel="stylesheet" href="./fonts/museo-sans-cyrl.css" />
+		<!-- styles -->
+		<link rel="stylesheet" href="./css/normalize.css" />
+		<link rel="stylesheet" href="./css/drop-default-styles.css" />
+		<link rel="stylesheet" href="./css/style.css" />
+	</head>
+	<body>
+		<div class="login-wrapper">
+			<div class="login-container">
+				<a href="./index.html" class="logo"><img src="./src/icons/dourent.svg" alt="" width="140" /></a>
+				<section class="login">
+					<div class="login__header">
+						<button class="login__switch login__switch--auth login__switch--active">Вхід</button>
+						<button class="login__switch login__switch--registration">Реєстрація</button>
+					</div>
+					<div class="login__body">
+						<!-- AUTH START -->
+						<div class="login__inner login__inner--auth login--visible">
+							<p class="login__text">
+								Будь ласка, введіть адресу електронної пошти та пароль для входу на сайт
+							</p>
+							<form action="" class="login__form login__form--auth">
+								<input type="email" class="login__input" placeholder="E-mail" name="email" required />
+								<input
+									type="password"
+									class="login__input"
+									placeholder="Пароль"
+									name="password"
+									required
+								/>
+								<label class="switch-label">
+									<span class="switch">
+										<input type="checkbox" name="remember-me" />
+										<span class="slider round"></span>
+									</span>
+									Запам'ятати мене
+								</label>
+								<button type="submit" class="login__button login__button--submit">Увійти</button>
+							</form>
+							<button type="button" class="login__button login__button--restore">Забув пароль</button>
+						</div>
+						<!-- REGISTRATION START -->
+						<div class="login__inner login__inner--registration">
+							<p class="login__text">Введіть адресу електронної пошти для реєстрації на сайті</p>
+							<form action="" class="login__form login__form--registration">
+								<input
+									type="email"
+									class="login__input login__input--email"
+									placeholder="E-mail"
+									name="email"
+									required
+								/>
+								<button
+									type="submit"
+									class="login__button login__button--submit login__button--registration-next"
+								>
+									Далі
+								</button>
+							</form>
+						</div>
+						<!-- REGISTRATION-CODE START  -->
+						<div class="login__inner login__inner--registration-code">
+							<p class="login__text">Введіть код з електронної адреси</p>
+							<button class="login__back-button" type="button">
+								<img src="./src/icons/arrow-left.svg" width="30" height="18" alt="" />Назад
+							</button>
+							<form action="" class="login__form login__form--registration-code">
+								<input
+									type="number"
+									class="login__input login__input--code"
+									placeholder="Введіть код підтвердження"
+									name="email"
+									required
+								/>
+								<button
+									type="submit"
+									class="login__button login__button--submit login__button--registration-last-step"
+								>
+									Далі
+								</button>
+							</form>
+						</div>
+						<!-- REGISTRATION-CODE NAME PASSWORD  -->
+						<div class="login__inner login__inner--name-password">
+							<p class="login__text">Введіть ваше ім'я та пароль</p>
+							<form action="" class="login__form login__form--registration-code">
+								<input type="text" class="login__input" placeholder="Ваше ім'я" name="name" required />
+								<input
+									type="password"
+									class="login__input"
+									placeholder="Пароль"
+									name="password"
+									required
+								/>
+								<button
+									type="submit"
+									class="login__button login__button--submit login__button--registration-next"
+								>
+									Завершити реєстрацію
+								</button>
+							</form>
+						</div>
+						<!-- RESTORE START -->
+						<div class="login__inner login__inner--restore">
+							<p class="login__text">Відновлення паролю</p>
+							<form action="" class="login__form login__form--restore">
+								<input type="email" class="login__input" placeholder="E-mail" name="email" required />
+								<button type="submit" class="login__button login__button--submit">Відновити</button>
+							</form>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+		<script src="./js/login.js"></script>
+	</body>
+</html>

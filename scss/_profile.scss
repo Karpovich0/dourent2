@@ -1,0 +1,165 @@
+.general-statistic {
+    min-width: 500px;
+    @media (max-width: $width-mobile) {
+        min-width: unset;
+    }
+    li {
+        margin-bottom: 20px;
+        display: flex;
+        column-gap: 10px;
+        @media (max-width: $width-tablet-large) {
+            margin-bottom: 15px;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    p:first-child {
+        font-weight: 300;
+    }
+    p:last-child > span {
+        font-weight: 300;
+    }
+}
+.statistic-wallet {
+    min-width: 275px;
+}
+.statistic {
+    background-color: $color-light-gray;
+    padding: 24px 24px;
+    font-size: 24px;
+    border-radius: 18px;
+    @media (max-width: $width-tablet-large) {
+        padding: 20px;
+        font-size: 20px;
+    }
+    @media (max-width: $width-mobile) {
+        padding: 14px;
+        font-size: 18px;
+    }
+}
+.profile-body {
+    margin-top: 36px;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    row-gap: 22px;
+    @media (max-width: $width-tablet-large) {
+        margin-top: 25px;
+    }
+    @media (max-width: $width-tablet) {
+        margin-top: 20px;
+    }
+    .street {
+        @media (max-width: $width-tablet) {
+            flex-direction: column;
+            align-items: start;
+        }
+    }
+    form {
+        flex-grow: 1;
+        align-self: stretch;
+        display: flex;
+        flex-direction: column;
+        .profile-body__data,
+        .profile-body__address {
+            background-color: $color-light-gray;
+            padding: 14px 25px;
+            font-size: 24px;
+            border-radius: 18px;
+            @media (max-width: $width-tablet-large) {
+                padding: 10px 15px;
+                font-size: 20px;
+            }
+            @media (max-width: $width-mobile) {
+                font-size: 18px;
+            }
+            span {
+                color: red;
+            }
+            input {
+                min-width: 330px;
+                @media (max-width: $width-tablet-large) {
+                    min-width: unset;
+                }
+            }
+        }
+        .profile-body__data {
+            margin-bottom: 20px;
+        }
+
+        ul li {
+            margin-bottom: 15px;
+            gap: 10px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        p {
+            align-self: start;
+            margin-bottom: 22px;
+        }
+        ul li,
+        p {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            @media (max-width: $width-mobile) {
+                flex-direction: column;
+                align-items: start;
+            }
+        }
+        label {
+            font-weight: 300;
+        }
+        input {
+            padding: 8px 20px;
+            background-color: $color-light-gray;
+            border: 2px solid $color-white;
+            border-radius: 6px;
+            font-size: 24px;
+            @media (max-width: $width-tablet-large) {
+                padding: 5px 15px;
+                font-size: 20px;
+            }
+            @media (max-width: $width-mobile) {
+                font-size: 18px;
+            }
+        }
+        .button {
+            margin-top: 20px;
+            padding: 0 40px;
+            align-self: start;
+            background-color: $color-orange;
+            font-size: 24px;
+            line-height: 46px;
+            border: 3px solid $color-orange;
+            &:hover {
+                background-color: $color-white;
+                color: $color-orange;
+            }
+            @media (max-width: $width-tablet-large) {
+                padding: 0 30px;
+                margin-top: 15px;
+                font-size: 22px;
+            }
+            @media (max-width: $width-mobile) {
+                padding: 0 25px;
+                font-size: 20px;
+            }
+        }
+    }
+}
+.profile-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    @media (max-width: $width-tablet-large) {
+        margin-bottom: 15px;
+        font-size: 20px;
+    }
+    @media (max-width: $width-mobile) {
+        font-size: 18px;
+    }
+}
